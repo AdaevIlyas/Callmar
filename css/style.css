@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+div,
+span {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto;
+}
+
+a {
+  display: inline-block;
+}
+
+.container {
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.wrapper-main {
+  background: linear-gradient(178.68deg, #4F3963 -2.24%, #764469 31.33%, #5E3E66 76.25%, #2C2142 94.12%);
+  overflow: hidden;
+}
+
+.wrapper {
+  background: linear-gradient(252.43deg, #D45B78 0.01%, #4B3862 101.01%);
+}
+
+.bubble {
+  position: absolute;
+}
+
+/* header */
+
+.header {
+  padding-top: 75px;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list__item:first-child {
+  margin-right: 30px;
+}
+
+.nav-list__link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FCFCFC;
+}
+
+.nav-list__link_border {
+  padding: 10px 40px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+/* callback */
+
+.callback {
+  position: relative;
+}
+
+.callback__main {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.callback__img {
+  max-width: 1305px;
+  margin-bottom: 20px;
+}
+
+.callback__heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FCFCFC;
+  margin-bottom: 30px;
+}
+
+.callback__description {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #F2F2F2;
+  margin-bottom: 70px;
+  max-width: 980px;
+}
+
+.callback__btn {
+  background: #D75C78;
+  border-radius: 5px;
+  padding: 17px 55px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 90px;
+}
+
+.bubble-big-left {
+  left: 121px;
+  top: 687px;
+}
+
+.bubble-little-left {
+  left: 192px;
+  top: 824px;
+}
+
+.bubble-middle-left {
+  left: 120px;
+  top: 850px;
+}
+
+.bubble-little-right {
+  right: 100px;
+  top: 931px;
+}
+
+.bubble-middle-right {
+  right: 10px;
+  top: 815px;
+  filter: drop-shadow(0px 6px 34px rgba(0, 0, 0, 0.25));
+}
+
+.bubble-big-right {
+  right: 60px;
+  top: 721px;
+}
+
+/* cards */
+
+.cards {
+  padding-top: 460px;
+  padding-bottom: 336px;
+}
+
+.cards__main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scuba {
+  position: absolute;
+  top: -350px;
+  right: -30px;
+}
+
+.scuba-two {
+  position: absolute;
+  top: 720px;
+  left: -200px;
+}
+
+.all-bubble {
+  position: absolute;
+  top: 755px;
+  left: -40px;
+}
+
+.scuba__img {
+  max-width: 670px;
+  filter: drop-shadow(10px 59px 77px rgba(0, 0, 0, 0.25));
+}
+
+.cards-column_margin {
+  margin-top: 220px;
+}
+
+.cards-column:not(:last-child) {
+  margin-right: 44px;
+}
+
+.cards-column-card {
+  height: 280px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 125px;
+  padding-right: 80px;
+  background: #523A64;
+  box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.cards-column-card:first-child {
+  margin-bottom: 160px;
+}
+
+.cards-column-card__num {
+  position: absolute;
+  top: 30px;
+  left: -18px;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 112px;
+  color: #944B6E;
+}
+
+.cards-column-card__heading {
+  max-width: 532px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #F2F2F2;
+  margin-bottom: 25px;
+}
+
+.cards-column-card__description {
+  max-width: 533px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #F2F2F2;
+}
+
+.cards-bubble-xxl {
+  top: 940px;
+  right: -80px;
+}
+
+.cards-bubble-bottom-middle {
+  top: 1060px;
+  right: -30px;
+}
+
+.cards-bubble-bottom-little {
+  top: 1045px;
+  right: -80px;
+}
+
+.cards-bubble-center-middle {
+  top: 540px;
+  right: 600px;
+}
+
+.cards-bubble-left-big {
+  top: -130px;
+  left: -130px;
+}
+
+.cards-bubble-left-little {
+  top: 200px;
+  left: -90px;
+}
+
+.cards-bubble-left-middle {
+  top: 280px;
+  left: 0px;
+}
+
+/* video */
+
+.video {
+  padding-bottom: 330px;
+}
+
+.video__heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+  color: #FFFFFF;
+  max-width: 652px;
+  margin-bottom: 70px;
+}
+
+.video__block {
+  background: #414141;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__start {
+  max-width: 252px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer__main {
+  position: relative;
+}
+
+.footer-submarine {
+  position: absolute;
+  top: -310px;
+  right: -230px;
+}
+
+.footer__cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-card_background-one {
+  background: url('../img/footer/background-one.png')
+}
+
+.footer-card_background-two {
+  background: url('../img/footer/background-two.png')
+}
+
+.footer-card {
+  padding-top: 50px;
+  padding-left: 65px;
+  padding-right: 65px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer-card__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+
+.footer-card__description {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #F2F2F2;
+  margin-bottom: 100px;
+  max-width: 390px;
+}
+
+.footer-card__btn {
+  text-align: center;
+  padding: 18px 50px;
+  border: 2px solid #FFFFFF;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+
+.footer-fish {
+  position: absolute;
+  top: 550px;
+  left: -230px;
+}
+
+.footer-light {
+  position: absolute;
+  top: 620px;
+  left: -260px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.407);
+  filter: blur(35.5px);
+}
+
+.footer-img__img {
+  width: 100%;
+}
+
+.footer-card__btn-container {
+  text-align: center;
+}

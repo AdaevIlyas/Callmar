@@ -1,0 +1,9 @@
+@media (max-width: 1500px) {
+
+  .header,
+  .main,
+  .footer__main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
