@@ -123,6 +123,11 @@ a {
   line-height: 42px;
   color: #FFFFFF;
   margin-bottom: 90px;
+  transition: background 0.3s ease;
+}
+
+.callback__btn:hover {
+  background: #DF4C6E;
 }
 
 .bubble-big-left {
@@ -393,4 +398,296 @@ a {
 
 .footer-card__btn-container {
   text-align: center;
+}
+
+.phone__btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.phone-info {
+  display: none;
+  position: fixed;
+  padding: 30px 40px;
+  background: rgba(41, 41, 41, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  bottom: 30px;
+  right: 140px;
+  animation: scale 0.3s ease-in;
+}
+
+.bell-btn__hover:hover+.phone-info {
+  display: block;
+}
+
+.phone-info__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.shape {
+  padding: 90px 60px;
+  text-align: center;
+  background: linear-gradient(311.56deg, #D45B78 -21.39%, #4B3862 75.84%);
+  position: fixed;
+  margin-left: 300px;
+  margin-right: 300px;
+  top: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: scale 0.3s ease-in-out;
+  display: none;
+  border-radius: 10px;
+}
+
+.shape-active {
+  display: block;
+}
+
+.shape-close {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 165px;
+}
+
+.shape-close__img {
+  cursor: pointer;
+}
+
+.shape__heading {
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 112px;
+  color: #FCFCFC;
+  margin-bottom: 50px;
+}
+
+.shape__description {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FCFCFC;
+  margin-bottom: 60px;
+}
+
+.shape-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.shape-form__field {
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  outline: none;
+  border: none;
+  box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-right: 20px;
+}
+
+.shape-form__field::placeholder {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #D8D8D8;
+}
+
+.shape-form__btn {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  padding: 15px 75px;
+  background: #D75C78;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.shape-form__btn:hover {
+  background: #DF4C6E;
+}
+
+.shape__signature {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #E7E7E7;
+}
+
+.send {
+  padding: 50px 60px;
+  text-align: center;
+  background: linear-gradient(311.56deg, #D45B78 -21.39%, #4B3862 75.84%);
+  position: fixed;
+  margin-left: 600px;
+  margin-right: 600px;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  animation: scale 0.3s ease-in-out;
+  border-radius: 30px;
+  display: none;
+}
+
+.send-active {
+  display: block;
+}
+
+.send__heading {
+  position: relative;
+  font-weight: 100;
+  font-size: 96px;
+  line-height: 112px;
+  color: #FCFCFC;
+}
+
+.send__heading::after {
+  content: '\2713';
+  margin-left: 20px;
+  font-size: 120px;
+}
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* .account {} */
+
+.entrance {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-image: linear-gradient(311.56deg, rgba(212, 91, 120, 0.97) -21.39%, rgba(75, 56, 98, 0.97) 75.84%), url('../img/account/callmar-bg.png');
+  backdrop-filter: blur(25px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.entrance-active {
+  display: flex;
+}
+
+.entrance__close {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.entrance__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FCFCFC;
+  margin-bottom: 140px;
+}
+
+.entrance-form {
+  text-align: center;
+}
+
+.entrance-form__row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.entrance-form__row:first-child {
+  margin-bottom: 40px;
+}
+
+.entrance-form__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FCFCFC;
+}
+
+.entrance-form__field {
+  background: #F3F3F3;
+  box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 720px;
+  height: 75px;
+}
+
+.entrance-form__field:active,
+.entrance-form__field:focus {
+  outline: 3px solid #D75C78;
+}
+
+.entrance-form__password-remove {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #D75C78;
+  align-self: end;
+  margin-top: 20px;
+  margin-bottom: 62px;
+}
+
+.entrance-form__btn {
+  padding: 15px 115px;
+  background: #D75C78;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  border: none;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: pointer
+}
+
+.entrance-form__btn:hover {
+  background: #DF4C6E;
+}
+
+.regist-form__btn {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
 }

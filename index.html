@@ -20,7 +20,7 @@
           <a href="#"><img src="img/header/callmar.svg" alt="logo"></a>
           <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-list__item"><a href="#" class="nav-list__link">Вход</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link" id="entranceOpen">Вход</a></li>
               <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link_border">Регистрация</a></li>
             </ul>
           </nav>
@@ -163,6 +163,56 @@
         </div>
         <img class="footer-img__img" src="img/footer/background-footer.png" alt="">
       </footer>
+    </div>
+  </div>
+  <div class="call">
+    <div class="bell-btn">
+      <div class="bell-btn__hover" id="bellBtn">
+        <img src="img/footer/phone.svg" alt="" class="phone__btn">
+      </div>
+      <div class="phone-info">
+        <p class="phone-info__text">
+          Есть вопросы? Нажмите и<br>
+          мы перезвоним вам за<br>
+          27 секунд!</p>
+      </div>
+    </div>
+    <div class="shape">
+      <div class="shape-close">
+        <img class="shape-close__img" id="bellBtnClose" src="img/shape/close.svg" alt="close">
+      </div>
+      <h2 class="shape__heading">У Вас остались вопросы?</h2>
+      <p class="shape__description">Хотите, перезвоним вам за 27 секунд?</p>
+      <form class="shape-form" action="">
+        <input class="shape-form__field" type="tel" placeholder="+7 --- --- -- --">
+        <button class="shape-form__btn">Жду звонка!</button>
+      </form>
+      <p class="shape__signature">Звонок бесплатный</p>
+    </div>
+    <div class="send">
+      <img src="img/header/callmar.svg" alt="">
+      <p class="send__heading">Ожидайте звонка</p>
+    </div>
+  </div>
+  <div class="account">
+    <div class="entrance">
+      <img class="entrance__close" id="entranceClose" src="img/account/account-close.svg" alt="close">
+      <h2 class="entrance__heading account__heading">Вход в личный кабинет</h2>
+      <form action="" class="entrance-form">
+        <div class="entrance-form__row">
+          <p class="entrance-form__description">Ваш Email</p>
+          <input type="text" class="entrance-form__field">
+        </div>
+        <div class="entrance-form__row">
+          <p class="entrance-form__description">Пароль</p>
+          <input type="password" class="entrance-form__field">
+          <a href="#" class="entrance-form__password-remove">Вспомнить пароль</a>
+        </div>
+        <button class="entrance-form__btn" id="etranceForm">Войти</button>
+      </form>
+      <a href="#" class="regist-form__btn" id="registForm">Регистрация</a>
+    </div>
+    <div class="registration">
     </div>
   </div>
   <script src="js/script.js"></script>
