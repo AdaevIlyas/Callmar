@@ -21,7 +21,8 @@
           <nav class="nav">
             <ul class="nav-list">
               <li class="nav-list__item"><a href="#" class="nav-list__link" id="entranceOpen">Вход</a></li>
-              <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link_border">Регистрация</a></li>
+              <li class="nav-list__item"><a href="#" class="nav-list__link nav-list__link_border"
+                  id="registrationOpen">Регистрация</a></li>
             </ul>
           </nav>
         </div>
@@ -34,7 +35,7 @@
           <h1 class="callback__heading">Обратный звонок на сайт</h1>
           <p class="callback__description">Получайте в 3 раза больше звонков сразу после установки виджета на Ваш сайт
             Сервис окупает свой годовой тариф в первую же неделю</p>
-          <a href="#" class="callback__btn">ПОДКЛЮЧИТЬ</a>
+          <a href="#" class="callback__btn" id="entrAllBtn">ПОДКЛЮЧИТЬ</a>
         </div>
       </div>
       <div class="bubble bubble-big-left"><img src="img/main/callback/bubble-big.svg" alt=""></div>
@@ -141,7 +142,7 @@
                 <p class="footer-card__description">Тестовая версия на 14 дней и 20 руб. на балансе для проверки
                   качества связи</p>
                 <div class="footer-card__btn-container">
-                  <a href="" class="footer-card__btn">ПОПРОБОВАТЬ</a>
+                  <a href="" class="footer-card__btn" id="entrAllBtn">ПОПРОБОВАТЬ</a>
                 </div>
               </div>
               <div class="footer-card footer-card_background-two">
@@ -150,7 +151,7 @@
                 <p class="footer-card__description">Платите только за наш сервис, связь оплачивается по минимальной
                   цене 4 руб. за минуту.</p>
                 <div class="footer-card__btn-container">
-                  <a href="" class="footer-card__btn">ПОДКЛЮЧИТЬ</a>
+                  <a href="" class="footer-card__btn" id="entrAllBtn">ПОДКЛЮЧИТЬ</a>
                 </div>
               </div>
               <div class="footer-light">
@@ -213,6 +214,33 @@
       <a href="#" class="regist-form__btn" id="registForm">Регистрация</a>
     </div>
     <div class="registration">
+      <img class="registration__close" id="registrationClose" src="img/account/account-close.svg" alt="close">
+      <h2 class="registration__heading account__heading">Регистрация</h2>
+      <p class="registration__description registration__description_one">После регистрации вы получите:</p>
+      <p class="registration__description registration__description_margin">10 минут связи - бесплатно</p>
+      <form action="" class="registration-form">
+        <div class="registration-form__row">
+          <p class="registration-form__description">Ваш Email</p>
+          <input type="text" class="registration-form__field">
+        </div>
+        <div class="registration-form__row">
+          <p class="registration-form__description">Ваше имя</p>
+          <input type="text" class="registration-form__field">
+        </div>
+        <div class="registration-form__row">
+          <p class="registration-form__description">Адрес вашего сайта</p>
+          <input type="text" class="registration-form__field">
+        </div>
+        <div class="registration-form__row">
+          <p class="registration-form__description">Ваш телефон (на него будут поступать звоноки с сайта)</p>
+          <input type="text" class="registration-form__field">
+        </div>
+        <div class="registration-form__row">
+          <p class="registration-form__description">Придумайте пароль</p>
+          <input type="password" class="registration-form__field">
+        </div>
+        <button class="registration-form__btn" id="registForm">Зарегестрироваться</button>
+      </form>
     </div>
   </div>
   <script src="js/script.js"></script>

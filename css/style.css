@@ -26,6 +26,40 @@ a {
   display: inline-block;
 }
 
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+
+  background: #D45B78;
+  border-left: 2px solid rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #D45B78;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.registration::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+}
+
+.registration::-webkit-scrollbar-track {
+
+  background: #D45B78;
+  border-left: 2px solid rgb(255, 255, 255);
+}
+
+.registration::-webkit-scrollbar-thumb {
+  background: #D45B78;
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
 .container {
   max-width: 1520px;
   margin: 0 auto;
@@ -394,6 +428,7 @@ a {
 
 .footer-img__img {
   width: 100%;
+  margin-bottom: -5px;
 }
 
 .footer-card__btn-container {
@@ -458,6 +493,11 @@ a {
 
 .shape-close__img {
   cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.shape-close__img:hover {
+  transform: rotate(180deg);
 }
 
 .shape__heading {
@@ -611,6 +651,11 @@ a {
   top: 50px;
   right: 50px;
   cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.entrance__close:hover {
+  transform: rotate(180deg);
 }
 
 .entrance__heading {
@@ -632,7 +677,7 @@ a {
   flex-direction: column;
 }
 
-.entrance-form__row:first-child {
+.entrance-form__row:not(:last-child) {
   margin-bottom: 40px;
 }
 
@@ -641,6 +686,7 @@ a {
   font-size: 24px;
   line-height: 28px;
   color: #FCFCFC;
+  margin-bottom: 10px;
 }
 
 .entrance-form__field {
@@ -690,4 +736,125 @@ a {
   line-height: 28px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.registration {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow-y: scroll;
+  display: none;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-image: linear-gradient(311.56deg, rgba(212, 91, 120, 0.97) -21.39%, rgba(75, 56, 98, 0.97) 75.84%), url('../img/account/callmar-bg.png');
+  backdrop-filter: blur(25px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.registration-active {
+  display: flex;
+}
+
+.registration__close {
+  cursor: pointer;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  transition: transform 0.4s ease;
+}
+
+.registration__close:hover {
+  transform: rotate(180deg);
+}
+
+.registration__heading {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FCFCFC;
+  margin-bottom: 10px;
+}
+
+.registration__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FCFCFC;
+}
+
+.registration__description_one {
+  margin-bottom: 5px;
+}
+
+.registration__description_margin {
+  margin-bottom: 65px;
+}
+
+.registration-form {
+  text-align: center;
+}
+
+.registration-form__row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.registration-form__row:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.registration-form__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FCFCFC;
+  margin-bottom: 10px;
+}
+
+.registration-form__field {
+  background: #F3F3F3;
+  box-shadow: inset 0px 0px 20px -1px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  width: 720px;
+  height: 75px;
+}
+
+.registration-form__field:active,
+.registration-form__field:focus {
+  outline: 3px solid #D75C78;
+}
+
+.registration-form__btn {
+  padding: 15px 115px;
+  background: #D75C78;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  border: none;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: pointer
+}
+
+.registration-form__btn:hover {
+  background: #DF4C6E;
+}
+
+.form-active {
+  display: none;
+}
+
+.shape-active-bg {
+  filter: blur(5px);
 }
