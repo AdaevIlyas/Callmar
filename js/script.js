@@ -32,7 +32,7 @@ callFormSend.addEventListener('click', () => {
   if (callFormSendBox.classList.contains('send-active')) {
     setTimeout(() => {
       callFormSendBox.classList.remove('send-active');
-    }, 1500);
+    }, 3000);
   }
 });
 
