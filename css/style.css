@@ -520,6 +520,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.shape-form__box {
+  display: flex;
+  justify-content: center;
   margin-bottom: 90px;
 }
 
@@ -570,6 +575,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .send {
+  display: none;
   padding: 50px 60px;
   text-align: center;
   background: linear-gradient(311.56deg, #D45B78 -21.39%, #4B3862 75.84%);
@@ -582,7 +588,6 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   animation: scale 0.3s ease-in-out;
   border-radius: 30px;
-  display: none;
 }
 
 .send-active {
